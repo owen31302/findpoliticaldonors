@@ -3,6 +3,13 @@ import java.util.Queue;
 
 /**
  * Created by Yu-Cheng Lin on 10/28/17.
+ *
+ * TransactionManager will take transaction amount as input,
+ * and update the information, such as median, number of transaction, total amount.
+ *
+ * Note:
+ * In order to optimize the getMedian operation, it uses two heap structure (minHeap, maxHeap) to find the median.
+ * It will take O(logN) times to maintain the structure, and gives us O(1) time to find the median.
  */
 public class TransactionManager {
     private double totalAMT;

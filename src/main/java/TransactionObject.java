@@ -4,6 +4,9 @@ import java.util.Date;
 
 /**
  * Created by Yu-Cheng Lin on 10/28/17.
+ *
+ * TransactionObject is to parse the input string as the specified format,
+ * and to tell other class if this transaction object is valid or not and provide other classes with the desired information.
  */
 public class TransactionObject {
     private String CMTE_ID;
@@ -13,6 +16,10 @@ public class TransactionObject {
     private boolean skipZIP;
     private boolean skipDT;
 
+    /**
+     * The constructor will parse each column in the line, and save the result to data members.
+     * @param line
+     */
     public TransactionObject(String line){
         String[] columns = line.split("\\|", -1);
 
