@@ -37,4 +37,4 @@ There are three classes in this project:
 * Test_3 contains missing TX_AMT line.
 * Test_4 contains missing ZIPCODE line.
 * Test_5 contains missing TX_DT line.
-The default input is itcont_2018_20170908_20171103.txt from the website.
+* The default input is itcont_2018_20170908_20171103.txt from the website.
