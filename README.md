@@ -21,7 +21,7 @@ There are three classes in this project:
 2. TransactionManager   
  It will take transaction amount as input, and update the information, such as median, number of transaction, total amount.  
  **`Note:`**  
- In order to optimize the getMedian operation, it uses two heap structure (minHeap, maxHeap) to find the median. It will take O(logN) times to maintain the structure, and gives us O(1) time to find the median.  
+ In order to optimize the getMedian operation, it uses two heap structure (minHeap, maxHeap) to find the median. It will take O(logN) times for inserting a row, and gives us O(1) time to find the median.  
 3. TransactionObject  
  It is to parse the input string as the specified format, and to tell other class if this transaction object is valid or not and provide other classes with the desired information.
 
@@ -29,4 +29,12 @@ There are three classes in this project:
 * Install Java 8 if you don't have it on your computer.
 * Download this repository, and extract it.
 * Change directory to this folder.
-* Run shell script `sh run.sh`, then the program will process the input file and save the result to the output file. 
+* Run shell script `sh run.sh`, then the program will process the input file and save the result to the output file.
+ 
+# Testing
+* Test_1 is the basic logic check.
+* Test_2 contains missing CMTE_ID line.
+* Test_3 contains missing TX_AMT line.
+* Test_4 contains missing ZIPCODE line.
+* Test_5 contains missing TX_DT line.
+The default input is itcont_2018_20170908_20171103.txt from the website.
